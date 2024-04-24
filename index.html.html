@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Cruelty and Prevention</title>
+    <style>
+        /* Define the Times New Roman and sans-serif font styles */
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdd2e3; /* Shades of pink background */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Set minimum height to viewport height */
+        }
+        /* Header styles */
+        header {
+            position: fixed; /* Fixed positioning to make it float */
+            top: 0; /* Align to the top of the viewport */
+            left: 0; /* Align to the left of the viewport */
+            width: 100%; /* Occupy the full width */
+            background-color: #ff7eb9; /* Modified pink color */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000; /* Ensure the header is above other elements */
+            /* Add cover photo with lowered transparency */
+            background-image: url(https://m.media-amazon.com/images/S/abs-image-upload-na/4/AmazonStores/ATVPDKIKX0DER/84f51617e8af9c595dd1288c09723fcd.w3000.h600._CR0%2C0%2C3000%2C600_SX1500_.jpg); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+            opacity: 1; /* Lowered transparency */
+        }
+        /* Navigation styles */
+        nav {
+            background-color: #ff4d8d; /* Modified pink color */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s, text-shadow 0.3s; /* Add transition effect */
+        }
+        nav a:hover {
+            color: #ff7eb9; /* Change color on hover */
+            text-shadow: 0 0 10px #ff7eb9; /* Add text shadow on hover */
+        }
+        /* Section styles */
+        section {
+            padding: 20px;
+            margin: 160px 20px 20px; /* Add top margin to accommodate fixed header */
+            background-color: #fff;
+            position: relative; /* Set relative positioning */
+        }
+        section h2 {
+            position: absolute; /* Set absolute positioning for section titles */
+            top: -60px; /* Adjust position to make it visible below the fixed header */
+            left: 0;
+            width: 100%;
+            font-size: 24px; /* Adjust font size if needed */
+        }
+        /* Footer styles */
+        footer {
+            background-color: #ff7eb9; /* Modified pink color */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto; /* Push footer to bottom */
+            width: 100%;
+        }
+        /* Canvas styles */
+        canvas {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Additional font style for authors */
+        .author-names {
+            font-family: Arial, sans-serif; /* New font style */
+            font-size: 16px; /* Adjust font size if needed */
+            margin-top: 20px; /* Add spacing between content and author names */
+        }
+        /* Image label styles */
+        .image-label {
+            font-size: 14px;
+            font-style: italic;
+            color: #666;
+            text-align: center;
+            margin-top: 5px;
+        }
+        /* Video container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            padding-top: 25px;
+            height: 0;
+            margin-top: 100px; /* Adjust margin to push the video lower */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* Text formatting styles */
+        p {
+            font-style: italic;
+        }
+        ul {
+            font-weight: bold;
+        }
+        /* Image container styles */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        /* Image styles */
+        .image-container img {
+            width: 1500px;
+            height: 300px;
+            margin: 10px; /* Add margin around the images */
+        }
+        /* Feedback buttons */
+        .feedback-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .feedback-buttons button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #ff7eb9; /* Modified pink color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .feedback-buttons button:hover {
+            background-color: #ff4d8d; /* Darker pink color on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1 style="position: relative; z-index: 1;">Animal Cruelty and Prevention</h1>
+        <!-- Navigation -->
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#statistics">Statistics</a>
+            <a href="#prevention">Prevention</a>
+            <a href="#impact">Impact</a>
+            <a href="#support">Support</a>
+        </nav>
+    </header>
+    <!-- Section: Overview -->
+    <section id="overview">
+        <h2>Overview</h2>
+        <!-- Video placeholder -->
+        <div class="video-container">
+            <!-- Add video link here -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0231rTx7cP0" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!-- Paragraphs describing animal cruelty -->
+        <p><strong>Animal cruelty</strong> is a deeply distressing and pervasive issue that permeates various facets of society, inflicting untold suffering upon countless innocent creatures. It encompasses a wide spectrum of reprehensible behaviors, ranging from <em>neglect</em> and <em>abandonment</em> to outright <em>abuse</em>, <em>torture</em>, and <em>exploitation</em>. In homes, farms, laboratories, entertainment venues, and beyond, animals endure unimaginable pain and distress at the hands of humans, often with no recourse or means of escape.</p>
+        <p><em>Neglect</em>, perhaps one of the most insidious forms of cruelty, sees animals deprived of their most basic needs—food, water, shelter, and medical care. Whether confined to cramped cages, left to fend for themselves in harsh environments, or subjected to prolonged suffering without intervention, these animals face a life of misery and despair. Conversely, deliberate acts of cruelty, fueled by malice or indifference, inflict physical and psychological harm beyond measure. From acts of violence and torture to the callous killing of innocent creatures, the depths of human cruelty know no bounds.</p>
+        <p>Ultimately, the fight against animal cruelty is a moral imperative—one that speaks to our capacity for <strong>empathy</strong>, <strong>compassion</strong>, and <strong>justice</strong>. By standing up for the voiceless and vulnerable, we not only protect animals from harm but also uphold the values of decency, compassion, and respect that define us as a society. Together, let us work towards a future where animals are no longer victims of cruelty but cherished companions deserving of our love, care, and protection.</p>
+        <!-- Feedback buttons -->
+        <div class="feedback-buttons">
+            <button class="positive-feedback-btn">Positive Feedback</button>
+            <button class="negative-feedback-btn">Negative Feedback</button>
+        </div>
+    </section>
+    <!-- Section: Statistics -->
+    <section id="statistics">
+        <h2>Statistics</h2>
+        <!-- Animal cruelty statistics chart canvas -->
+        <canvas id="animalCrueltyChart" width="400" height="200"></canvas>
+        <!-- Paragraph with statistical data -->
+        <p><strong>According to recent studies:</strong></p>
+        <ul>
+            <li>Approximately <em>1.3 million animals</em> are abused or killed due to animal cruelty each year in the United States alone.</li>
+            <li>The most common victims of animal cruelty are <em>dogs</em>, <em>cats</em>, and <em>horses</em>.</li>
+            <li>Only a small percentage of reported animal cruelty cases result in <em>convictions</em>, highlighting the challenges in enforcing animal protection laws.</li>
+        </ul>
+        <!-- Additional statistics -->
+        <p>Animal cruelty affects not only domestic pets but also wildlife and animals used in industries such as farming, entertainment, and research. Understanding the scope and impact of animal cruelty is essential for implementing effective prevention measures.</p>
+        <!-- Feedback buttons -->
+        <div class="feedback-buttons">
+            <button class="positive-feedback-btn">Positive Feedback</button>
+            <button class="negative-feedback-btn">Negative Feedback</button>
+        </div>
+    </section>
+    <!-- Section: Prevention -->
+    <section id="prevention">
+        <h2>Prevention</h2>
+        <!-- Paragraph describing prevention strategies -->
+        <p><strong>Preventing animal cruelty</strong> requires a concerted effort from individuals, communities, and governments. Effective prevention strategies include:</p>
+        <ul>
+            <li>Education and awareness programs to promote empathy and responsible pet ownership.</li>
+            <li>Enforcement of existing animal protection laws and implementation of stricter penalties for offenders.</li>
+            <li>Supporting and volunteering with animal welfare organizations to rescue and rehabilitate abused animals.</li>
+            <li>Promoting ethical treatment of animals in industries such as farming, entertainment, and research.</li>
+        </ul>
+        <!-- Additional prevention measures -->
+        <p>Encouraging responsible breeding practices and discouraging the purchase of animals from unethical breeders or pet stores can help reduce the demand for animals bred in inhumane conditions.</p>
+        <!-- Feedback buttons -->
+        <div class="feedback-buttons">
+            <button class="positive-feedback-btn">Positive Feedback</button>
+            <button class="negative-feedback-btn">Negative Feedback</button>
+        </div>
+    </section>
+    <!-- Section: Impact -->
+    <section id="impact">
+        <h2>Impact</h2>
+        <!-- Paragraph describing the impact of animal cruelty -->
+        <p>The impact of animal cruelty extends beyond individual animals to affect communities and society as a whole. Consequences include:</p>
+        <ul>
+            <li>Diminished animal welfare and suffering, leading to physical and psychological harm.</li>
+            <li>Erosion of trust in human decency and empathy, affecting social cohesion.</li>
+            <li>Economic costs associated with animal rescue, rehabilitation, and enforcement of animal protection laws.</li>
+        </ul>
+        <!-- Additional impacts -->
+        <p>Addressing animal cruelty is not only a moral imperative but also contributes to the well-being of communities and the environment. By promoting compassion and respect for all living beings, we create a more just and humane society.</p>
+        <!-- Feedback buttons -->
+        <div class="feedback-buttons">
+            <button class="positive-feedback-btn">Positive Feedback</button>
+            <button class="negative-feedback-btn">Negative Feedback</button>
+        </div>
+    </section>
+    <!-- Section: Support -->
+    <section id="support">
+        <h2>Support</h2>
+        <!-- Images -->
+        <div class="image-container">
+            <img src="https://mms.businesswire.com/media/20181004005736/en/682599/5/National_Animal_Welfare_Leaders_Logo.jpg" alt="Supporting animal welfare organizations" style="max-width: 1500px; height: 300px;">
+            <p class="image-label">Supporting Animal Welfare Organizations</p>
+            <img src="https://www.humananimalsupportservices.org/wp-content/uploads/HASS-homepage-featured-image.jpg" alt="Promoting responsible pet ownership" style="max-width: 1500px; height: 300px;">
+            <p class="image-label">Promoting Responsible Pet Ownership</p>
+        </div>
+        <!-- Paragraph encouraging support for animal welfare -->
+        <p><strong>Supporting animal welfare efforts</strong> is crucial in combating animal cruelty. You can make a difference by:</p>
+        <ul>
+            <li>Donating to reputable animal rescue and advocacy organizations.</li>
+            <li>Adopting pets from shelters rather than purchasing them from breeders.</li>
+            <li>Reporting suspected cases of animal cruelty to authorities.</li>
+            <li>Advocating for stronger animal protection laws in your community.</li>
+        </ul>
+        <!-- Additional support initiatives -->
+        <p>Volunteering at local animal shelters or participating in fundraising events can also help raise awareness and support for animal welfare causes.</p>
+        <!-- Feedback buttons -->
+        <div class="feedback-buttons">
+            <button class="positive-feedback-btn">Positive Feedback</button>
+            <button class="negative-feedback-btn">Negative Feedback</button>
+        </div>
+    </section>
+    <!-- Footer with author names -->
+    <footer>
+        <p>&copy; 2024 Animal Cruelty and Prevention</p>
+        <!-- Authors' names -->
+        <p class="author-names">Authors: Angelica, Atheissia, Jamaica, Krizzia, Ryan</p>
+    </footer>
+
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JavaScript for creating charts -->
+    <script>
+        // Animal cruelty data
+        const animalCrueltyData = {
+            labels: ['2019', '2020', '2021', '2022', '2023'],
+            datasets: [{
+                label: 'Reported Cases of Animal Cruelty',
+                backgroundColor: 'rgba(255, 126, 185, 0.2)', // Pink color
+                borderColor: 'rgba(255, 126, 185, 1)',
+                data: [10000, 12000, 13000, 11000, 14000] // Example data, replace with actual statistics
+            }]
+        };
+
+        // Get the context of the canvas element
+        const animalCrueltyCtx = document.getElementById('animalCrueltyChart').getContext('2d');
+
+        // Create the line chart
+        const animalCrueltyChart = new Chart(animalCrueltyCtx, {
+            type: 'line',
+            data: animalCrueltyData,
+            options: {
+                scales: {
+                    yAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Number of Cases'
+                        }
+                    }],
+                    xAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Year'
+                        }
+                    }]
+                }
+            }
+        });
+
+        // Smooth scroll functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1); // Get the target section's id
+                const target = document.getElementById(targetId);
+                const headerOffset = document.querySelector('header').offsetHeight; // Get the height of the header
+                const sectionOffset = target.offsetTop - headerOffset; // Calculate the section offset
+
+                // Find the heading element within the section
+                const headingElement = target.querySelector('h2');
+                // Calculate the scroll offset to position the heading at the top of the viewport
+                const scrollOffset = headingElement.getBoundingClientRect().top + window.scrollY - headerOffset;
+
+                window.scrollTo({
+                    top: scrollOffset,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

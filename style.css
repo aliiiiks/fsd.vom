@@ -1,0 +1,140 @@
+/* Define the Times New Roman and sans-serif font styles */
+body {
+    font-family: Times New Roman, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdd2e3; /* Shades of pink background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to viewport height */
+}
+/* Header styles */
+header {
+    position: fixed; /* Fixed positioning to make it float */
+    top: 0; /* Align to the top of the viewport */
+    left: 0; /* Align to the left of the viewport */
+    width: 100%; /* Occupy the full width */
+    background-color: #ff7eb9; /* Modified pink color */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Ensure the header is above other elements */
+    /* Add cover photo with lowered transparency */
+    background-image: url(https://m.media-amazon.com/images/S/abs-image-upload-na/4/AmazonStores/ATVPDKIKX0DER/84f51617e8af9c595dd1288c09723fcd.w3000.h600._CR0%2C0%2C3000%2C600_SX1500_.jpg); /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    opacity: 1; /* Lowered transparency */
+}
+/* Navigation styles */
+nav {
+    background-color: #ff4d8d; /* Modified pink color */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s, text-shadow 0.3s; /* Add transition effect */
+}
+nav a:hover {
+    color: #ff7eb9; /* Change color on hover */
+    text-shadow: 0 0 10px #ff7eb9; /* Add text shadow on hover */
+}
+/* Section styles */
+section {
+    padding: 20px;
+    margin: 160px 20px 20px; /* Add top margin to accommodate fixed header */
+    background-color: #fff;
+    position: relative; /* Set relative positioning */
+}
+section h2 {
+    position: absolute; /* Set absolute positioning for section titles */
+    top: -60px; /* Adjust position to make it visible below the fixed header */
+    left: 0;
+    width: 100%;
+    font-size: 24px; /* Adjust font size if needed */
+}
+/* Footer styles */
+footer {
+    background-color: #ff7eb9; /* Modified pink color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Push footer to bottom */
+    width: 100%;
+}
+/* Canvas styles */
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+/* Additional font style for authors */
+.author-names {
+    font-family: Arial, sans-serif; /* New font style */
+    font-size: 16px; /* Adjust font size if needed */
+    margin-top: 20px; /* Add spacing between content and author names */
+}
+/* Image label styles */
+.image-label {
+    font-size: 14px;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    margin-top: 5px;
+}
+/* Video container */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 25px;
+    height: 0;
+    margin-top: 100px; /* Adjust margin to push the video lower */
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* Text formatting styles */
+p {
+    font-style: italic;
+}
+ul {
+    font-weight: bold;
+}
+/* Image container styles */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Image styles */
+.image-container img {
+    width: 1500px;
+    height: 300px;
+    margin: 10px; /* Add margin around the images */
+}
+/* Feedback buttons */
+.feedback-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.feedback-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #ff7eb9; /* Modified pink color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.feedback-buttons button:hover {
+    background-color: #ff4d8d; /* Darker pink color on hover */
+}
